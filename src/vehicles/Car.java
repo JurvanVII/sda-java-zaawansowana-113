@@ -15,10 +15,19 @@ public class Car {
     }
 
     public void setModel(String model) {
+        System.out.println("Stan obiektu zmienil sie, nowy stan: " + model);
         this.model = model;
     }
 
     public void show() {
         System.out.println("To jest " + brand + " " + model);
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                '}';
     }
 }
